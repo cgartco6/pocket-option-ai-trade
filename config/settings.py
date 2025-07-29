@@ -1,5 +1,19 @@
 import os
 
+# AI model settings
+MODEL_PATH = "models/current_model.pkl"
+DATA_PATH = "data/trade_data.csv"
+MODEL_UPDATE_FREQUENCY = 50
+MIN_TRAINING_SAMPLES = 100
+MIN_PREDICTION_SAMPLES = 20
+HYPEROPT_EVALS = 50
+
+# Performance settings
+REPORT_PATH = "reports/"
+
+# Market observation
+NEWS_API_KEY = "your_news_api_key"  # For real implementation
+
 class Config:
     # Trading parameters
     TIMEFRAME = 5  # Minutes
